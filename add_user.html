@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Add User</title>
+<style>
+#wrapper
+{
+margin:10px auto 10px auto;
+padding-left:30px;
+max-height:100%;
+max-width:50%;
+border:1px solid;
+}
+
+select
+{
+background-color:silver;
+width:10%;
+}
+
+
+</style>
+</head>
+<body>
+<div id="wrapper">
+<form action="add_user.php" method="post">
+<h1>Add User</h1>
+<label>First name:</label><br>
+<input type="text" name="fname" /><br><br>
+<label>Last name:</label><br>
+<input type="text" name="lname" /><br><br>
+<label>Email:</label><br>
+<input type="text" name="email" /><br><br>
+<label>Gender:</label><br>
+<input type="radio" name="gender" value="male">Male</input>
+<input type="radio" name="gender" value="female">Female</input><br><br>
+<label>Education:</label><br>
+<select name="education">
+<option value="BE">BE</option>
+<option value="BSc">BSc</option>
+<option value="MCA">MCA</option>
+<option value="MSc">MSc</option><br>
+</select><br><br>
+<label>Skills:</label><br>
+<textarea name="skills"></textarea><br><br>
+<input type="submit" />
+</form>
+</div>
+</body>
+</html>
